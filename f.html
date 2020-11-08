@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .changeshape-color{
+    margin-top: 5rem;
+  }
+  .button{
+    text-align: center;
+    margin-top: 3rem;
+  }
+.button1 {
+    margin-bottom: 20px;
+    padding: 10px 25px 10px 25px;
+    width: 150px;
+}
+.button2 {
+    padding: 10px 25px 10px 25px;
+     width: 150px;
+}
+  #circle{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+  }
+  #inner-circle{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    background-color:#fff;
+        top: 30%;
+    right: 30%;
+  }
+  .calculator{
+    width: 600px;
+    margin:auto;
+    height: 800px;
+    background-color:grey;
+  }
+  
+</style>
+<section class="changeshape-color">
+  <div id="circle">
+  <div id="inner-circle">
+  </div>
+  </div>
+  <div class="button">
+  <button class="button1" onclick="btn1()">Change Color</button><br>
+  <button class="button2" onclick="btn2()">Change Shape</button>
+</div>
+
+</section>
+
+<section>
+  <h2>Calculator</h2>
+  <h2>Calculator2</h2>
+  <button>thanku</button>
+  <div class="calculator">
+    
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+  function btn1() {
+     var element=document.getElementById("circle");
+  element.style.background ="green";
+}
+  function btn2() {
+     var element=document.getElementById("inner-circle");
+  element.style.transform="translateX(30px)";
+}
+</script>
+
+
+<script>
+
+</script>
+</body>
+</html> 
